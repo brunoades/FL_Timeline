@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/jquery.roadmap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Linha do tempo Forbidden Lands</title>
+</head>
+<body>
+    <div id="my-timeline"></div>
+
+    <!--  -->
+    <script src="./js/jquery36.js"></script>
+    <script src="./js/jquery.roadmap.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+
+        var events = [
+            {
+                date: 'Dia 1 - 4005 - Inverno',
+                content: 'Groms e Morgraine saem da mata da presa após coletarem alguns tesouros em uma ruína.</small>'
+            },
+            {
+                date: 'Dia 2 - 4005 - Inverno',
+                content: 'A jovem Ishtar os ajuda e vender os objetos para os Pequeninos da aldeia onde mora.</small>'
+            },
+            {
+                date: 'Q3 - 2018',
+                content: 'Lorem ipsum dolor sit amet<small>Consectetur adipisicing elit</small>'
+            },
+            {
+                date: 'Q4 - 2018',
+                content: 'Lorem ipsum dolor sit amet<small>Consectetur adipisicing elit</small>'
+            },
+            {
+                date: 'Q1 - 2019',
+                content: 'Lorem ipsum dolor sit amet<small>Consectetur adipisicing elit</small>'
+            },
+            {
+                date: 'Q2 - 2019',
+                content: 'Lorem ipsum dolor sit amet<small>Consectetur adipisicing elit</small>'
+            },
+            {
+                date: 'Q3 - 2019',
+                content: 'Lorem ipsum dolor sit amet<small>Consectetur adipisicing elit</small><small>Consectetur adipisicing elit</small>'
+            },
+            {
+                date: 'Q4 - 2019',
+                content: 'Lorem ipsum dolor sit amet<small>Consectetur adipisicing elit</small>'
+            },
+            {
+                date: 'Q1 - 2020',
+                content: 'Lorem ipsum dolor sit amet<small>Consectetur adipisicing elit</small>'
+            },
+            {
+                date: 'Q2 - 2020',
+                content: 'Lorem ipsum dolor sit amet<small>Consectetur adipisicing elit</small>'
+            },
+            {
+                date: 'Q3 - 2020',
+                content: 'Lorem ipsum dolor sit amet<small>Consectetur adipisicing elit</small>'
+            },
+            {
+                date: 'Q4 - 2020',
+                content: 'Lorem ipsum dolor sit amet<small>Consectetur adipisicing elit</small>'
+            },
+            {
+                date: 'Q1 - 2021',
+                content: 'Lorem ipsum dolor sit amet<small>Consectetur adipisicing elit</small>'
+            },
+            {
+                date: 'Q2 - 2021',
+                content: 'Lorem ipsum dolor sit amet<small>Consectetur adipisicing elit</small>'
+            },
+            {
+                date: 'Q3 - 2021',
+                content: 'Lorem ipsum dolor sit amet<small>Consectetur adipisicing elit</small>'
+            },
+            {
+                date: 'Q4 - 2021',
+                content: 'Lorem ipsum dolor sit amet<small>Consectetur adipisicing elit</small>'
+            }
+        ];
+
+        $('#my-timeline').roadmap(events, {
+            eventsPerSlide: 6,
+            slide: 1,
+            prevArrow: '<i class="bi bi-arrow-left-circle-fill"></i>',
+            nextArrow: '<i class="bi bi-arrow-right-circle-fill"></i>'
+        });
+        });
+    </script>
+</body>
+</html>
